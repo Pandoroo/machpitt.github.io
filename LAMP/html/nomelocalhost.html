@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Servidor Apache</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
+    <link rel="stylesheet" href="../css/apache.css"/>
+  </head>
+  
+  <body>
+    <header>Acessar sua página usando www.com</header>
+    <h1>Servidor Apache2</h1>
+    <h3>Modificando o arquivo hosts</h3>
+    <p>Abra um terminal e digite o seguinte comando:</p>
+    <code>sudo pluma /etc/hosts</code>
+    <p>Logo na primeira linha vai estar o ip do localhost e o nome localhost.</p>
+    <p>Mude o nome localhost para o nome do seu site.<br/>Por exemplo:</p>
+    <code>127.0.0.1 www.seusite.com</code>
+    <hr/>
+    <h3>Configurar o arquivo do servidor</h3>
+    <p>Acesse o /etc/apache2/sites-available/meusite.conf e acrescente algumas linhas:</p>
+    <code>sudo pluma /etc/apache2/sites-available/meusite.conf</code>
+    <pre>
+            ServerName www.meusite.com
+	    ServerAdmin webmaster@www.meusite.com
+	    DocumentRoot /home/user/meusite_html/
+	    ServerAlias www.meusite.com meusite.com
+	  </pre>
+	  <p>Salve o aquivo e reinicie o apache2:</p>
+	  <code>systemctl reload apache2</code>
+	  <p>ou:</p>
+	  <code>sudo /etc/init.d/apache2 restart</code>
+	  <hr/>
+	  <h3>Acessando o seu site</h3>
+	  <p>Abra um navegador e digite o o seu endereço.</p>
+	  <code>www.meusite.com</code>
+	  <p>E pronto! Seu site está configurado com o nome de sua escolha</p>
+	  <p>Se tudo foi feito direitinho, com certeza estará tudo funciando conforme o desejado!</p>
+	  <hr/>
+    <details>
+      <summary>Sobre a página</summary>
+      <address>
+        <p>Autor: Alan Machado<br/>
+        Fonte: <a href="https://www.vivaolinux.com.br/topico/Apache-Web-Server/Mudar-o-nome-do-localhost" target="_blank">https://www.vivaolinux.com.br</a><br/>
+        Última atualização: 13/01/2019</p>
+      </address>
+    </details>
+    <footer><a href="../index.html">Voltar a página inicial.</a><footer>
+  </body>
+</html>

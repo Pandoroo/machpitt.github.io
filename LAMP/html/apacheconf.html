@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Servidor Apache</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
+    <link rel="stylesheet" href="../css/apache.css"/>
+  </head>
+  
+  <body>
+    <header>Passo a passo para instalar e configurar o servidor <abbr title="Linux, Apache, MySql, PHP">LAMP</abbr></header>
+    <h1>Configurando o servidor Apache2</h1>
+    <h3>Instalação</h3>
+    <p>Para instalar o LAMP digite o comando abaixo no seu terminal:</p>
+    <code>sudo apt-get install lamp-server^</code>
+    <p>O símbolo (^) faz parte do comando.</p>
+    <hr/>
+    <h3>Primeiro teste no Apache</h3>
+    <p>Logo após a instalação execute o código abaixo:</p>
+    <code>sudo /etc/init.d/apache2 restart</code>
+    <p>Agora acesse o endereço <a href="http://localhost" target="_blank">http://localhost</a> no seu navegador.</p>
+    <p>Se tudo der certo vocẽ verá a página escrito<q>It works!</q></p>
+    <hr/>
+    <h3>Como exibir sua página no localhost</h3>
+    <p>Para começar copie a configuração do site padrão:</p>
+    <code>sudo cp /etc/apache2/sites-availabe/000-default.conf /etc/apache2/sites-available/meusite.conf</code>
+    <p>Agora edite o arquivo com seu editor de texto pelo terminal com o seguinte comando:</p>
+    <code>sudo pluma /etc/apache2/sites-available/meusite.conf</code>
+    <p>Dentro do arquivo, na área <q>DocumentRoot</q> indique o caminho de onde o documento raíz do seu site.<br/>
+    por exemplo:</p>
+    <code>DocumentRoot /home/user/meusite_html</code>
+    <p>Agora é só salvar o arquivo e sair.</p>
+    <hr/>
+    <h3>Ativando seu site</h3>
+    <p>Agora é necessário que a página padrão seja desativada e a sua página seja ativada no lugar dela.<br/>
+    Para isso basta digitar o comando abaixo:</p>
+    <code>sudo a2dissite 000-default && sudo a2ensite meusite</code>
+    <p>Depois é necessário reiniciar o servidor:</p>
+    <code>sudo /etc/init.d/apache2 restart</code>
+    <p>Agora é só acessar o <a href="http://localhost" target="_blank">localhost</a> e sua página estará funcionando.</p>
+    <hr/>
+    <details>
+      <summary>Sobre a página</summary>
+      <address>
+        <p>Autor: Alan Machado<br/>
+        Fonte: <a href="https://help.ubuntu.com/community/ApacheMySQLPHP" target="_blank">help.ubuntu.com/community/ApacheMySQLPHP</a><br/>
+        Última atualização: 12/01/2019</p>
+      </address>
+    </details>
+    <footer><a href="../index.html">Voltar a página inicial.</a><footer>
+  </body>
+</html>

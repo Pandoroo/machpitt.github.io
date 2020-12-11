@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+div {
+  width: 100%;
+  float: left;
+  height: 100px;
+  margin: 0;
+}
+.c1 {
+  background-image: linear-gradient(to right, #00f, #44b);
+}
+.c2 {
+  background-image: linear-gradient(to right, #f00, #b40);
+}
+.c3 {
+  background-image: linear-gradient(to right, #0f0, #0b4);
+}

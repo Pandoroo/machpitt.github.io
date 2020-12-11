@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: fonte1;
+  src: url(../font/fonte1.ttf);
+}
+body {
+  border: 5px solid #5f0;
+  padding: 30px;
+  margin: 20px 80px;
+  font-family: fonte1;
+  background-color: #111;
+  color: #5f0;
+}
+h1 {
+  margin: 50px;
+  text-align: center;
+}
+p {
+  color: #afa;
+  text-indent: 40px;
+}  
+

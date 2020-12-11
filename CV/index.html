@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário de Currículo</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
+    <meta name="author" content="Alan Machado"/>
+    <link rel="stylesheet" href="css.main.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Currículo</h1>
+    </header>
+    <form action="php/cv.php" target="_blank" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        Nome Completo:<br/>
+        <input type="text" name="nome" autofocus/><br/><br/>
+        Idade:<br/>
+        <input type="number" name="idade" min="14" max="100"/><br/><br/>
+        Estado Civil:<br/>
+        <input type="radio" name="ec" value="Solteiro" checked/><input type="radio" name="ec" value="Solteira"/>Solteiro<br/>
+        <input type="radio" name="ec" value="Casado"/><input type="radio" name="ec" value="Casada"/>Casado<br/>
+        <input type="radio" name="ec" value="Divorciado"/><input type="radio" name="ec" value="Divorciada"/>Divorciado<br/>
+        <input type="radio" name="ec" value="Outros"/>Outros<br/><br/>
+        Cidade:<br/>
+        <input type="text" name="cidade" value="São Pedro da Aldeia"/><br/><br/>
+        Estado:<br/>
+        <input type="text" name="estado" value="RJ"/><br/><br/>
+        Telefone:<br/>
+        <input type="text" name="tel1"/>&nbsp;&nbsp;
+        <input type="text" name="tel2"/><br/><br/>
+        E-mail:<br/>
+        <input type="email" name="email"/>
+      </fieldset>
+      <hr/>
+      <fieldset>
+        <legend>Escolaridade</legend>
+        <input type="checkbox" name="titulo" value="Escolaridade:"/><br/>
+        <select name="escola">
+          <option name="escola" value="Ensino Fundamental">Ensino Fundamental</option>
+          <option name="escola" value="Ensino Médio">Ensino Médio</option>
+          <option name="escola" value="Ensino Superior">Ensino Superior</option>
+          <option name="escola" value="">Outros</option>
+        </select>
+        <input type="text" name="escola2"/>
+      </fieldset>
+      <input type="submit" value="Enviar!"/>
+    </form>

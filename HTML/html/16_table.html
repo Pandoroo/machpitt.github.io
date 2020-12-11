@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <title>Tabelas</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=devide-width, initial-scale=1"/>
+    <style>
+      h2 {
+        text-align: center;
+        padding: 15px;
+        background-color: #5aa;
+        border: 1px solid #50a;
+      }
+      hr {
+        color: #008;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 2px; <!-- border-collapse: collapse tem preferência -->
+      }
+      th, td {
+        padding: 15px;
+        border: 3px solid #000;
+      }
+      th {
+        text-align: center;
+      }
+      td {
+        font-family: arial;
+      }
+      table#t1 {
+        width: 50%;
+      }
+      table#t1 tr:nth-child(even) {
+        background-color: #0506;
+      }
+      table#t1 tr:nth-child(odd) {
+        background-color: #0503;
+      }
+      table#t1 th {
+        background-color: #0501;
+      }
+      table#t1 caption {
+        background-color: #0f06;
+        padding: 20px;
+        font-family: cursive;
+        font-size: 20px;
+        text-shadow: 5px 5px 3px #666;
+      }
+      table#t2 {
+        width: 100%;
+      }
+      table#t2 tr:nth-child(even) {
+        background-color: #aaa;
+      }
+      table#t2 tr:nth-child(odd) {
+        background-color: #fff;
+      }
+      table#t2 th {
+        color: white;
+        background-color: #006;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Tabela 1</h2>
+    <table id="t1">
+      <caption>Nomes e sobrenomes</caption>
+      <tr>
+        <th>Nome</th>
+        <th colspan="2">Sobrenome</th>
+        <th>Idade</th>
+      </tr>
+      <tr>
+        <td>Alan</td>
+        <td>Silveira</td>
+        <td>Machado</td>
+        <td>37</td>
+      </tr>
+      <tr>
+        <td>Celso</td>
+        <td>Pitta</td>
+        <td>Santos</td>
+        <td>54</td>
+      </tr>
+      <tr>
+        <td>Thanos</td>
+        <td>Cachorro</td>
+        <td>Bom</td>
+        <td>10</td>
+      </tr>
+    </table>
+    <hr/>
+
+    <h2>Tabela 2</h2>
+    <table id="t2">
+      <tr>
+        <th>Nome</th>
+        <td>Alan</td>
+        <td>Machado</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telefone:</th>
+        <td>99754-1216</td>
+      </tr>
+      <tr>
+        <td>98861-7223</td>
+      </tr>
+    </table>
+    <hr/>
+
+    <h2>Tabela 3</h2>
+    <table style="width: 100%">
+      <colgroup>
+        <col style="background-color:#0608;"/>
+        <col style="background-color:#6608;"/>
+        <col style="background-color:#0668;"/>
+      </colgroup>
+      <caption>Nova tabela</caption>
+        <tr>
+          <th>a</th>
+          <th>b</th>
+          <th>c</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+    </table>
+
+  </body>
+</html>

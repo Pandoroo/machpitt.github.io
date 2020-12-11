@@ -1,0 +1,14 @@
+iframe {
+  border: 2px solid red;
+  width: 600px;
+  height: 200px;
+}
+.video iframe {
+  width: auto;
+  height: auto;
+  border: none;
+  float: left;
+  padding: 15px;
+  background-color: brown;
+  display: block;
+}

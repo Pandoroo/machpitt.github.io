@@ -1,0 +1,28 @@
+.top {
+  background-color: #2f88;
+}
+.txt {
+  color: #f00;
+  border: 1px solid #000;
+}
+.cor {
+  background-color: #444;
+  padding: 20px;
+  margin: 20px;
+  color:#fff
+}
+.azul {
+  color: #00f;
+}
+.verde {
+  color: #0f0;
+}
+.vermelho {
+  color: #f00;
+}
+.title {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}

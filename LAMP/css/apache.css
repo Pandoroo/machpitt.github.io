@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-left: 90px;
+  margin-right: 90px;
+  font-family: sans-serif;
+}
+header {
+  font-size: 30px;
+  font-weight: bold;
+  border: 2px solid #046;
+  background-color: #046;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+h1 {
+  font-size: 25px;
+  background-color: #058;
+  padding: 20px 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+h3 {
+  background-color: #068;
+  padding: 12px;
+  margin: 0;
+  color: #ddf;
+}
+code {
+  background-color: #def;
+  padding: 5px;
+  display: block;
+}
+footer {
+  background-color: #048;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+p a {
+  color: #048;
+  text-decoration: none;
+  transition: 2s;
+}
+p a:hover {
+  color: #f00;
+  text-decoration: undeerline;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 2s;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+hr {
+  border: 10px solid #fff;
+}
+nav {
+  background-color: #068;
+  margin: 0;
+  overflow: hidden;
+}
+nav a {
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  float: left;
+  transition: 2s;
+}
+nav a:hover {
+  background-color: #fff;
+  color: #048;
+}

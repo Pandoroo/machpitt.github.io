@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Introdução</title>
+    <link rel="stylesheet" type="text/css" href="../css/pages.css"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"/>    
+  </head>
+  
+  <body>
+    <header>
+      <h1>Introdução ao CSS</h1>
+    </header>
+    <nav>
+      <a href="../index.html">Página Inicial</a>
+      <a href="#l1">Porque usar CSS?</a>
+      <a href="#l2">Como inserir CSS no HTML</a>
+    </nav>
+    <section>
+      <h1 id="l1">Porque usar CSS?</h1>
+      <h2>O que é CSS?</h2>
+      <p>CSS é uma abreviação para <q>Cascading Style Sheets</q>, em português, Folhas de Estilos em Cascatas. O CSS estiliza sua página html, passando informação visual.</p>
+      <p>O CSS facilita essa estilização porque um único arquivo <q>.css</q> pode alterar todas as páginas de uma única vez sem precisar abrir cada arquivo <q>.html</q>  e mudar um a um.</p>
+    </section>
+    <section>
+      <h1 id="l2">Como inserir CSS no HTML</h1>
+      <h2>Inline CSS</h2>
+      <p>O <q>Inline CSS</q> é usado dentro do arquivo html, diretamente no elemento onde se deseja usar um estilo. Vamos ver um exemplo de como usar um <q>Inline CSS</q>:</p>
+      <pre>
+      <code>
+      &lt;h1 style="background-color:#00f;"&gt;
+      </code>
+      </pre>
+      <p>Nesse exemplo eu usei o CSS diretamente dentro da tag que está dentro de um documento html. Essa forma de CSS deve ser usada apenas em casos extremos. Evite ao máximo.</p>
+      <h2>Internal CSS</h2>
+      <p>O <q>Internal CSS</q> ou, CSS interno, é usado dentro das tags &lt;head&gt; e é comum de ser usado entre os programadores WEB. Abaixo vou mostar um exemplo:</p>
+      <pre><code>
+      &lt;head&gt;
+        &lt;style&gt;
+        h1 {
+          background-color: #00f;
+        }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      </code></pre>
+      <p>Esse tipo de CSS é usado com frequência mas ainda assim só estiliza a página onde ele estiver.</p>
+      <h2>External CSS</h2>
+      <p>O External CSS é um arquivo CSS que, como o próprio nome já diz, está do lado de fora do documento em .html. Esse é o tipo mais comum de ser usado e também o mais apropriado, pois facilita a manutenção dos estilos em vários arquivos .html, poupando trabalho de abrir-los um a um para modificar cada página. Abaixo um exemplo de como se escreve esse tipo de CSS:</p>
+      <pre><code>
+      h1 {
+        background-color: #00f;
+      }
+      </code></pre>
+      <p>Dentro do arquivo .css não precisa colocar as tags &lt;style&gt;, basta colocar qual tag vai ser modificada e seus atributos, valores e propriedades.</p>
+      <p>Para mostrar para o documento em .html onde está o arquivo .css que vai estilizá-lo, usa-se a tag &lt;link&gt; para isso dentro das tags &lt;head&gt;.</p>
+      <pre><code>
+      &lt;head&gt;
+        &lt;link rel="stylesheet" type="text/css" href="main.css"/&gt;
+      &lt;/head&gt;
+      </code></pre>      
+    </section>  
+    <footer>
+      <h2>Introdução ao CSS</h2>
+    </footer>
+  </body>
+</html>

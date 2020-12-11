@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0, 20, 0, 20;
+  background-color: #eef;
+}
+header {
+  background-color: #048;
+  text-align: center;
+  padding: 15px;
+  color: #eef;
+  transition: 5s;
+}
+header:hover {
+  background-color: #eef;
+  color: #048;
+}
+nav {
+  background-color: #26a;
+  overflow: hidden;
+  margin: 0;
+}
+nav a {
+  color: #eef;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  transition: 2s;
+}
+nav a:hover {
+  color: #26a;
+  background-color: #eef;
+}
+section {
+  float: left;
+  width: 80%;
+  height: 400px;
+}
+aside {
+  float: left;
+  width: 20%;
+  height: 400px;
+  background-color: #000;
+}
+footer {
+  clear: both;
+  background-color: #048;
+  padding: 15px;
+  transition: 5s;
+}
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: #048;
+  display: block;
+}
+footer:hover {
+  background-color: #eef;
+}
+  

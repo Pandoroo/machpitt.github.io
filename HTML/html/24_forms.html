@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Formulários</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Formulários HTML</h1>
+    </header>
+
+    <form action="/action_page.php" target="_blank" method="post">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <label for="sexo">Nome:</label><br/>
+        <input type="text" name="nome" value="Celso"/><br/>
+        Sobrenome:<br/>
+        <input type="text" name="sobrenome"/><br/><br/>
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" value="masculino" checked/>masculino<br/>
+        <input type="radio" name="sexo" id="sexo" value="feminino"/>feminino<br/>
+        <input type="radio" name="sexo" value="outro" disabled/>outro<br/>
+      </fieldset>
+      <fieldset>
+        <legend>Formação</legend>
+        Ensino<br/>
+        <select name="ensino">
+          <optgroup label="Fundamental">
+          <option value="fundamental">Incompleto</option>
+          <option value="ifundamental">Completo</option>
+          <optgroup label="Médio">
+          <option value="medio">Incompleto</option>
+          <option value="imedio" selected>Completo</option>
+          <optgroup label="Superior">
+          <option value="sup">Cursando</option>
+          <option value="isup">Formado</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Cores</legend>
+        <input list="cores"/>
+        <datalist id="cores">
+          <option value="vermelho">
+          <option value="azul">
+          <option value="amarelo">
+          <option value="verde">
+        </datalist><br/>
+        <input type="submit" value="enviar">
+      </fieldset>
+      <fieldset>
+        <textarea name="message" rows="10" cols="20">
+          escreva aqui sua mensagem!
+        </textarea><br/>
+        <button type="button" onclick="alert('Estamos indo muito bem!')">Mensagem!</button>
+      </fieldset>
+      <fieldset
+        oninput="x.value=(parseInt(a.value)+parseInt(b.value)+parseInt(c.value))/parseInt(3)">
+        <input type="number" id="a" name="a" value="100">+
+        <input type="number" id="b" name="b" value="100">+
+        <input type="number" id="c" name="c" value="100">=
+        <output name="x" for="a b c"></output>
+        <br/>
+        <input type="submit" value="ok">
+      </fieldset>
+      <fieldset>
+        <legend>Dados de contato</legend>
+        Endereço:<br/>
+        <input type="text" name="endereco" id="end"/><br/>
+        e-mail:<br/>
+        <input type="text" name="email"/><br/>
+        Telefone:<br/>
+        <input type="text" name="telefone"/><br/>
+        <input type="submit" value="Enviar formulário!"/>
+      </fieldset>
+    </form>
+
+  </body>
+</html>

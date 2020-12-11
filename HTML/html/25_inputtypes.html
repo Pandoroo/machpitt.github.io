@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Input Types</title>
+  </head>
+
+  <body>
+    <audio controls>
+      <source src="../mpeg/abba.mp3" type="audio/mpeg">
+    </audio>
+
+    <form action="/action.php" method="post" novalidate>
+      <fieldset>
+        <legend>button</legend>
+        <input type="button" value="Clique Aqui!!!" onclick="alert('Porra meu!')"/>
+      </fieldset>
+      <fieldset>
+        <legend>checkbox</legend>
+        <input type="checkbox" name="azul" value="azul"/>Azul<br/>
+        <input type="checkbox" name="vermelho" value="vermelho"/>Vermelho<br/>
+      </fieldset>
+      <fieldset>
+        <legend>color</legend>
+        <input type="color" name="color" value="#ff0000"/>
+      </fieldset>
+      <fieldset>
+        <legend>date</legend>
+        Data: <input type="date">
+      </fieldset>
+      <fieldset>
+        <legend>password</legend>
+        Usuário:<br/>
+        <input type="text" name="usuario"/><br/>
+        Senha:<br/>
+        <input type="password" name="senha"/>
+      </fieldset>
+      <fieldset>
+        <legend>submit / reset</legend>
+        <input type="text" name="nome" placeholder="Nome Completo"/>
+        <input type="submit" value="Enviar!"/>
+        <input type="reset"/>
+      </fieldset>
+      <fieldset>
+        <legend>radio</legend>
+        Escolha uma das alternativas:<br/>
+        <input type="radio" name="sexo" value="h"/>Homem<br/>
+        <input type="radio" name="sexo" value="m" checked/>Mulher<br/>
+      </fieldset>
+      <fieldset>
+        <legend>datetime-local</legend>
+        escolha uma data:<br/>
+        <input type="datetime-local" name="local"/>
+      </fieldset>
+      <fieldset>
+        <legend>email</legend>
+        <input type="email" name="email"/>
+      </fieldset>
+      <fieldset>
+        <legend>file</legend>
+        escolha um arquivo: <input type="file" name="file" autofocus multiple/>
+      </fieldset>
+      <fieldset>
+        <legend>month</legend>
+        digite um mês: <input type="month" name="mes"/>
+      </fieldset>
+      <fieldset>
+        <legend>number</legend>
+        escolha: <input type="number" name="num" min="0" max="100" step="10" value="50"/>
+      </fieldset>
+      <fieldset>
+        <legend>range</legend>
+        <input type="range" name="range" min="0" max="1000" step="100" value="500"/>
+      </fieldset>
+      <fieldset>
+        <legend>search</legend>
+        <input type="search" name="proc"/>
+        <input type="submit" value="Pesquisar"/>
+      </fieldset>
+      <fieldset>
+        <legend>tel</legend>
+        <input type="tel" name="tel" pattern="[0-9]{2}-[0-9]{3}-[0-9]{5}"/>
+      </fieldset>
+      <fieldset>
+        <legend>time</legend>
+        <input type="time" name="user_time"/>
+      </fieldset>
+      <fieldset>
+        <legend>url</legend>
+        <input type="url" name="site"/>
+      </fieldset>
+    </form>
+    <form action="index.html" method="post"autocomplete="on">
+      <legend>Input Attributes</legend>
+      <fieldset>
+        <legend>value</legend>
+        <input type="text" name="nome" value="Celso Pitta"/>
+      </fieldset>
+      <fieldset>
+        <legend>readonly</legend>
+        <input type="text" name="nome" value="Celso" readonly/>
+      </fieldset>
+      <fieldset>
+        <legend>disabled</legend>
+        <input type="text" name="nome" value="Celso" disabled/>
+      </fieldset>
+      <fieldset>
+        <legend>size</legend>
+        <input type="text" name="nome" value="Celso" size="100" autocomplete="off"/>
+      </fieldset>
+      <fieldset>
+        <legend>maxlength</legend>
+        <input type="text" name="nome" value="celso" maxlength="10"/>
+      </fieldset>
+  </body>
+</html>

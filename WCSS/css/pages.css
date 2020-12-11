@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: fonte1;
+  src: url(../font/fonte1.ttf);
+}
+body {
+  font-family: fonte1;
+  background-image: linear-gradient(#111, #212);  
+  color: #afa;
+  border: 6px solid #5f0;
+}
+header {
+  background-image: linear-gradient(#111, #232, #111);
+  padding: 30px;
+  color: #5f0;
+  text-align: center;
+  border: 1px solid #5f0;
+}
+header:hover {
+  background-image: linear-gradient(#232, #111, #232);
+}
+nav {
+  float: left;
+  width: 15%;
+  border: 1px solid #5f0;
+}
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+nav a:hover {
+  color: #5f0;
+  background-color: #232;
+}
+section {
+  display: block;
+  float: right;
+  padding: 5px;
+  width: 85%;
+  border: 1px solid #5f0;
+  transition: 10s;
+}
+section:hover {
+  background-color: #010;
+}
+section h2 {
+  color: #5f0;
+  text-align: center;
+  font-size: 28px;
+  text-decoration: underline;
+}
+section h3 {
+  text-align: right;
+}
+section p {
+  padding: 20px;
+  text-indent: 50px;
+  text-align: justify;
+}
+section code {
+  font-size: 15px;
+  color: #0f4;
+}
+section a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #7f2;
+}
+footer {
+  background-color: #111;
+  padding: 20px;
+  color: #5f0;
+  text-align: center;
+  clear: both;
+}
+footer:hover {
+  background-color: #232;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}

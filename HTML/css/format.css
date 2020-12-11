@@ -1,0 +1,41 @@
+body {
+  background-color: hsla(42, 100%, 50%, 0.1);
+  border: 2px solid white;
+}
+h1 {
+  border: 2px solid hsla(210, 100%, 50%, 0.5);
+  font-family: Arial;
+  color: yellowgreen;
+  text-align: center;
+}
+p {
+  color: blue;
+  font-family:cursive;
+  margin: 2px;
+  text-align: justify;
+  text-indent: 30px;
+}
+#p01 {
+  border: 5px solid red;
+  background-color: blue;
+  color: yellow;
+  text-align: left;
+}
+a:link, a:visited {
+  color: green;
+  background-color: hsla(42, 100%, 50%, 1);
+  display: inline-block;
+  text-align: center;
+  padding: 15px 25px;
+}
+
+a:hover {
+  color: green;
+  background-color: yellowgreen;
+  text-decoration: overline;
+}
+
+a:active {
+  color: yellowgreen;
+  text-decoration: line-through;
+}
